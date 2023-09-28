@@ -1,0 +1,56 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar, .content, .trends {
+    padding: 20px;
+}
+
+.content {
+    width: 60%;
+    background-color: #e9ebec;
+}
+
+.sidebar {
+    width: 20%;
+    background-color: #f5f8fa;
+}
+
+/* インプットボックスのコンテナにflexboxを適用 */
+.tweet-input {
+    display: flex;
+    align-items: center; /* 子要素を垂直方向の中央に配置 */
+    gap: 10px; /* インプットとボタンの間のスペース */
+}
+
+/* インプットボックス自体のスタイル */
+#tweet-input {
+    flex-grow: 1; /* インプットボックスを残りのスペースに合わせて伸縮させる */
+    padding: 5px 10px; /* 必要に応じてパディングを調整 */
+    border: 1px solid #ccc; /* 必要に応じてボーダーのスタイルを調整 */
+    border-radius: 5px; /* 角を丸くする（オプション） */
+}
+
+button {
+    cursor: pointer;
+    background-color: #1da1f2;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+}
+
+button:hover {
+    background-color: #0c7abf;
+}
+
+.trends {
+    width: 20%;
+    background-color: #f5f8fa;
+}

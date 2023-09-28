@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+   
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SNS Webページ</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</head>
+
+<body>
+    <div class="container">
+        <!-- 左側のナビゲーション -->
+        <nav class="sidebar">
+            <!-- 各メニュー項目をリストで表示 -->
+            <ul>
+                <li>Home</li>
+                <li>Explore</li>
+                <li>Notifications</li>
+                <li>Messages</li>
+                <li>Bookmarks</li>
+                <li>Profile</li>
+            </ul>
+        </nav>
+
+        <!-- 中央のコンテンツエリア -->
+        <main class="content">
+            <!-- ツイート入力エリア -->
+            <div class="tweet-input">
+                <input type="text" id="tweet-input" placeholder="What’s happening?">
+                <button id="tweet-btn">Tweet</button>
+            </div>
+            
+            <!-- ツイート一覧 -->
+            <div class="tweets">
+                <ul id="tweets-list">
+                </ul>
+            </div>              
+        </main>
+
+        <!-- 右側のトレンドエリア -->
+        <aside class="trends">
+            <!-- トレンド一覧 -->
+            <div class="trend">Trending topic here...</div>
+            <!-- 省略 -->
+        </aside>
+    </div>
+</body>
+
+</html>
